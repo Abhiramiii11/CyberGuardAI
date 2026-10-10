@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CyberGuard AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= LEFT SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <img src="{{ url_for('static', filename='images/logo.png') }}"
+                 alt="Logo">
+
+            <div>
+
+                <h2>CyberGuard AI</h2>
+
+                <p>Your Cybersecurity Assistant</p>
+
+            </div>
+
+        </div>
+
+        <button class="new-chat">
+
+            <i class="fa-solid fa-plus"></i>
+
+            New Chat
+
+        </button>
+
+        <div class="sidebar-section">
+
+
+        </div>
+
+        <div class="sidebar-section">
+
+    <h3>Quick Tools</h3>
+
+    <div class="tool-buttons">
+
+        <button class="tool-card">
+
+            <i class="fa-solid fa-link"></i>
+
+            URL Scanner
+
+        </button>
+
+        <button class="tool-card">
+
+            <i class="fa-solid fa-key"></i>
+
+            Password Strength Checker
+
+        </button>
+
+        <button class="tool-card">
+
+            <i class="fa-solid fa-newspaper"></i>
+
+            Cybersecurity News
+
+        </button>
+
+    </div>
+
+</div>
+
+    </aside>
+
+    <!-- ================= MAIN CHAT ================= -->
+
+    <main class="chat-area">
+
+        <div class="chat-header">
+
+            <div>
+
+                <h1>CyberGuard AI</h1>
+
+                <p>Your trusted cybersecurity assistant</p>
+
+            </div>
+
+            <button id="theme-toggle">
+
+                🌙 Dark Mode
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= CHAT ================= -->
+
+        <div class="chat-box"
+             id="chat-box">
+
+            <div class="bot-message">
+
+                <h3>
+
+                    👋 Welcome!
+
+                </h3>
+
+                <p>
+
+                    I'm <strong>CyberGuard AI</strong>,
+                    your AI-powered cybersecurity assistant.
+
+                </p>
+
+                <p>
+
+                    Ask me anything related to
+                    phishing,
+                    ransomware,
+                    password security,
+                    Wi-Fi security,
+                    and much more.
+
+                </p>
+
+            </div>
+
+        </div>
+                <!-- ================= SUGGESTED QUESTIONS ================= -->
+
+        <div class="suggested-section">
+
+            <button class="suggestion-btn">
+
+                Gmail Hacked
+
+            </button>
+
+            <button class="suggestion-btn">
+
+                What is Phishing?
+
+            </button>
+
+            <button class="suggestion-btn">
+
+                Secure my Wi-Fi
+
+            </button>
+
+            <button class="suggestion-btn">
+
+                Password Security
+
+            </button>
+
+            <button class="suggestion-btn">
+
+                Ransomware
+
+            </button>
+
+        </div>
+
+        <!-- ================= INPUT AREA ================= -->
+
+        <div class="input-area">
+
+
+            <input
+                id="user-input"
+                type="text"
+                placeholder="Ask a cybersecurity question..."
+            >
+
+            <button id="voice-btn"
+                    title="Voice Input">
+
+                🎤
+
+            </button>
+
+            <button id="send-btn">
+
+                Send
+
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
